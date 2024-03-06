@@ -1,0 +1,32 @@
+doctype html
+
+
+head
+    block scripts
+        title BasicLoginSite
+        link(rel='canonical' href='https://getbootstrap.com/docs/5.3/examples/carousel/')
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@docsearch/css@3')
+        link(href='/stylesheets/bootstrap.min.css' rel='stylesheet')
+        link(href='stylesheets/index.css' rel='stylesheet')
+
+
+body
+    block content
+    header(data-bs-theme='dark')
+        nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+            .container
+                a.navbar-brand(href='#') Simple Login System
+                button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarCollapse.collapse.navbar-collapse
+                    ul.navbar-nav.me-auto.mb-2.mb-md-0
+                        li.nav-item
+                            a.nav-link.active(aria-current='page' href='/login') Login
+                        li.nav-item
+                            a.nav-link.active(href='/register') Register
+
+                    form.d-flex(role='search')
+                        input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                        button.btn.btn-outline-success(type='submit') Search
+    .container
+        block-content

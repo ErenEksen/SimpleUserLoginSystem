@@ -1,0 +1,26 @@
+extends TopBar
+doctype html
+html(lang='en')
+    append scripts
+        meta(charset='UTF-8')
+        link(rel='stylesheet' href='stylesheets/loginregister.css')
+
+
+    body
+        block content
+            br
+            form(method="POST", action="login/send")
+                div(id="ContactForm")
+                    form-group
+                    h1 Login
+                    label E-Mail address :
+
+                    input(name="email", type="email", placeholder="E-mail")
+
+                    form-group
+                    label Password :
+
+                    input(name="passwd", type="password", placeholder="Password")
+
+                    form-group
+                    button(type="submit", style="align-self:center", class="Button") Login

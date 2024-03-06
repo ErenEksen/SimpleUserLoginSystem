@@ -1,0 +1,28 @@
+
+
+h1, h3{
+    text-align: center;
+}
+body{
+    background: aliceblue;
+}
+#ContactForm{
+    display: grid;
+    justify-content: center
+}
+
+
+#ContactForm > button{
+    margin-top: 10px;
+}
+#ContactForm > input{
+    border: grey solid;
+}
+
+#ContactForm > input:hover{
+    background-color: #efefef;
+    border: darkgray solid;
+}
+#ContactForm > button:hover{
+    background-color: lightgray;
+}
